@@ -1,149 +1,149 @@
-# AI Pose Gallery · 中文版
+# AI Pose Gallery · 繁中版
 
-> 288 组 / 1439 张 AI 人体姿势参考图，日文数据完整汉化，附可直接部署的响应式静态画廊。
+> 288 組 / 1439 張 AI 人體姿勢參考圖，日文數據完整翻譯為繁體中文，附可直接部署的響應式靜態畫廊。
 
-![画廊预览](docs/preview.jpg)
+![畫廊預覽](docs/preview.jpg)
 
-<details><summary>手机端预览</summary>
+<details><summary>手機端預覽</summary>
 
-![手机端预览](docs/mobile.jpg)
+![手機端預覽](docs/mobile.jpg)
 
 </details>
 
-**在线演示：** <https://ai-pose-gallery.anhao.app/>
-**原始站点：** <https://ai-pose-gallery.pages.dev/>
+**在線演示：** 尚未部署（待接駁 Cloudflare Pages；部署完成後補上正式網址）
+**原始站點：** <https://ai-pose-gallery.pages.dev/>
 **原作者：** ギア（@giaaibusi）
-**中文版维护：** Anhao · [X @anhao_ai](https://x.com/anhao_ai)
-**GitHub：** <https://github.com/anhao/ai-pose-gallery-zh>
+**簡體中文版維護：** Anhao · [X @anhao_ai](https://x.com/anhao_ai)
+**繁中版維護：** dheimanb（本倉庫為繁中版 fork，源自 anhao 的簡體中文版）
+**GitHub：** <https://github.com/dheimanb/ai-pose-gallery-zh>
 
 ---
 
-## 这是什么
+## 這是什麼
 
-原站是一套面向 AI 绘画 / 3D / 摄影参考的姿势图库，元数据全部为日文，且不提供批量素材下载。本仓库做了三件事：
+原站是一套面向 AI 繪畫 / 3D / 攝影參考的姿勢圖庫，元數據全部為日文，且不提供批量素材下載。本倉庫做了三件事：
 
-1. **全量镜像** —— 1439 条记录对应的 1439 张缩略图（JPG 300×400）与 1439 张原图（PNG 900×1200）全部落地，共 2878 个文件 / 659.5 MB。
-2. **完整汉化** —— 日文字段逐条译为中文，覆盖 4 个体系、26 个分类、288 个姿势名、5 个视角，零遗漏。
-3. **可用的前端** —— 零依赖响应式画廊，完整实现原站的分类筛选、多角度切换、分组浏览、灯箱导航与原图下载，并针对手机重新设计布局。
+1. **全量鏡像** —— 1439 條記錄對應的 1439 張縮略圖（JPG 300×400）與 1439 張原圖（PNG 900×1200）全部落地，共 2878 個文件 / 659.5 MB。
+2. **完整繁中化** —— 日文字段逐條譯為繁體中文，覆蓋 4 個體系、26 個分類、288 個姿勢名、5 個視角，零遺漏。繁中譯文由簡體譯文經 OpenCC 機械轉換，未經逐條人手校對；譯文如有問題，歡迎開 Issue 指正。
+3. **可用的前端** —— 零依賴響應式畫廊，完整實現原站的分類篩選、多角度切換、分組瀏覽、燈箱導航與原圖下載，並針對手機重新設計佈局；頂部可切換繁中／日文資料（介面文字維持繁中）。
 
-## 页面功能
+## 頁面功能
 
-- 4 个体系页签，显示各体系的图片数与姿势组数
-- 姿势名、编号、ID、分类关键词搜索，支持 `/` 快速聚焦
-- 动作分类、5 种视角组合筛选，可一键重置
-- **按姿势分组 / 逐张浏览**双模式，分组卡片带多角度缩略图
-- 悬停或点击缩略图切换主图角度，点击卡片打开灯箱
-- 灯箱先显示缩略图、再加载 900×1200 原图，支持直接下载 PNG、复制 ID、新窗口打开
-- `← / →` 切换角度，`↑ / ↓` 切换姿势，`Esc` 关闭；手机支持左右滑动
-- PC 多列网格、手机双列网格，移动端筛选面板可展开/收起
-- 使用指南与注意事项弹窗，页脚标注图片来源与维护者链接
+- 4 個體系頁籤，顯示各體系的圖片數與姿勢組數
+- 姿勢名、編號、ID、分類關鍵詞搜索，支持 `/` 快速聚焦
+- 動作分類、5 種視角組合篩選，可一鍵重置
+- **按姿勢分組 / 逐張瀏覽**雙模式，分組卡片帶多角度縮略圖
+- 懸停或點擊縮略圖切換主圖角度，點擊卡片打開燈箱
+- 燈箱先顯示縮略圖、再加載 900×1200 原圖，支持直接下載 PNG、複製 ID、新窗口打開
+- `← / →` 切換角度，`↑ / ↓` 切換姿勢，`Esc` 關閉；手機支持左右滑動
+- PC 多列網格、手機雙列網格，移動端篩選面板可展開/收起
+- 繁中／日文資料切換（頁首語言切換鈕；日文顯示原始日文數據）
+- 使用指南與注意事項彈窗，頁腳標註圖片來源與維護者連結
 
-## SEO 与分享
+## SEO 與分享
 
-页面内置了完整的 SEO 与社交分享配置：
+頁面內置了完整的 SEO 與社交分享配置：
 
-- 关键词化标题：`AI 姿势参考库｜288 组人体姿势 · 1439 张多角度参考图`
-- 独立 description、keywords、author 与 `max-image-preview:large`
-- `canonical` 指向正式域名，避免自定义域名与 pages.dev 域名重复收录
-- Open Graph / Twitter Card 使用 1200×630 的 `og-cover.jpg`
-- JSON-LD 结构化数据：`WebSite` + `ImageGallery`，声明语言、简介与页面主图
-- `robots.txt` 放行全站并声明 sitemap，`sitemap.xml` 指向首页
-- 语义结构：单一 H1、分区 H2、卡片 H3；缩略图 `alt` 含姿势名与视角，图片懒加载
+- 關鍵詞化標題：`AI 姿勢參考庫｜288 組人體姿勢 · 1439 張多角度參考圖`
+- 獨立 description、keywords、author 與 `max-image-preview:large`
+- `canonical` 目前使用相對路徑，正式域名確定後改為絕對地址，避免自定義域名與 pages.dev 域名重複收錄
+- Open Graph / Twitter Card 使用 1200×630 的 `og-cover.jpg`（目前為相對路徑，正式域名確定後改回絕對地址）
+- JSON-LD 結構化數據：`WebSite` + `ImageGallery`，聲明語言（zh-TW）、簡介與頁面主圖
+- `robots.txt` 放行全站（Sitemap 行待正式域名確定後補上），`sitemap.xml` 指向首頁（loc 目前為相對路徑，待補正式域名）
+- 語義結構：單一 H1、分區 H2、卡片 H3；縮略圖 `alt` 含姿勢名與視角，圖片懶加載
 
-仓库中的绝对地址统一指向 `https://ai-pose-gallery.anhao.app/`。Fork 后如使用其他域名，需同步替换 `index.html` 的 canonical、`og:*`、`twitter:*`、JSON-LD，以及 `robots.txt`、`sitemap.xml` 中的地址。
+## 數據規模
 
-## 数据规模
-
-| 体系 | 条数 |
+| 體系 | 條數 |
 | --- | ---: |
-| 全身单人・标准系 | 365 |
-| 全身单人・性感系 | 399 |
-| 上半身单人 | 400 |
-| 双人缠绵 | 275 |
-| **合计** | **1439** |
+| 全身單人・標準系 | 365 |
+| 全身單人・性感系 | 399 |
+| 上半身單人 | 400 |
+| 雙人纏綿 | 275 |
+| **合計** | **1439** |
 
-每条记录对应 5 个视角中的若干个：正面 / 斜侧 / 侧面 / 俯视 / 仰视。
+每條記錄對應 5 個視角中的若干個：正面 / 斜側 / 側面 / 俯視 / 仰視。
 
-## 目录结构
+## 目錄結構
 
 ```
 .
-├── index.html              # 单页画廊（零依赖，直接打开即可）
-├── robots.txt              # 搜索引擎抓取规则
-├── sitemap.xml             # 站点地图
+├── index.html              # 單頁畫廊（零依賴，直接打開即可）
+├── robots.txt              # 搜索引擎抓取規則
+├── sitemap.xml             # 站點地圖
 ├── og-cover.jpg            # 1200×630 社交分享封面
 ├── data/
-│   ├── pose.json           # 原始日文数据（1439 条，未改动）
-│   ├── pose-zh.json        # 中文数据（前端实际读取，含检索字段）
-│   ├── meta.json           # 原始体系分类
-│   ├── meta-zh.json        # 中文体系分类
-│   └── translations.csv    # 日⇄中对照表（323 条，便于校对）
-├── thumbs/                 # 缩略图 1439 张 JPG 300×400（22 MB）
-├── img/                    # 原图 1439 张 PNG 900×1200（637 MB）
+│   ├── pose.json           # 原始日文數據（1439 條，未改動；頁面日文模式讀取）
+│   ├── pose-zh-TW.json     # 繁中數據（前端預設讀取，含檢索字段）
+│   ├── meta.json           # 原始體系分類
+│   ├── meta-zh-TW.json     # 繁中體系分類
+│   └── translations-tw.csv # 日⇄繁對照表（323 條，便於校對）
+├── thumbs/                 # 縮略圖 1439 張 JPG 300×400（22 MB）
+├── img/                    # 原圖 1439 張 PNG 900×1200（637 MB）
 ├── scripts/
-│   ├── download.py         # 并发下载器（48 线程 / 断点续传 / 自动重试）
-│   ├── i18n.py             # 日译中词典（唯一值去重后的 323 条译文）
-│   ├── apply_translation.py# 回填译文，生成中文数据
-│   ├── verify.py           # 校验文件完整性（存在性 / 大小 / 图片头）
-│   └── build.sh            # 生成 Cloudflare Pages 发布目录 dist/
-├── docs/                   # README 页面预览图
-├── _headers                # Cloudflare Pages 缓存策略
+│   ├── download.py         # 並發下載器（48 線程 / 斷點續傳 / 自動重試）
+│   ├── i18n.py             # 日譯繁詞典（唯一值去重後的 323 條譯文）
+│   ├── apply_translation.py# 回填譯文，生成繁中數據
+│   ├── verify.py           # 校驗文件完整性（存在性 / 大小 / 圖片頭）
+│   └── build.sh            # 生成 Cloudflare Pages 發佈目錄 dist/
+├── docs/                   # README 頁面預覽圖
+├── _headers                # Cloudflare Pages 緩存策略
 ├── LICENSE
 └── README.md
 ```
 
-## 数据结构
+## 數據結構
 
-`data/pose-zh.json` 字段说明：
+`data/pose-zh-TW.json` 字段說明：
 
-| 字段 | 原日文字段 | 示例 | 说明 |
+| 字段 | 原日文字段 | 示例 | 說明 |
 | --- | --- | --- | --- |
-| `id` | — | `full_sexy_P001_front` | 唯一标识 |
-| `体系` | `系統` | 全身单人・性感系 | 4 大类 |
-| `姿势编号` | `ポーズ番号` | `P001` | 80 组编号 |
-| `分类` | `分類` | 站姿 | 26 类动作 |
-| `姿势名称` | `ポーズ名` | S形站姿・胯部侧顶 | 288 种描述 |
-| `角度` | `アングル` | 正面 | 5 种视角 |
-| `缩略图` | `サムネ` | `thumbs/…jpg` | 相对路径 |
-| `原图` | `原寸` | `img/…png` | 相对路径 |
-| `检索` | — | 拼接串 | 供前端模糊搜索 |
+| `id` | — | `full_sexy_P001_front` | 唯一標識 |
+| `體系` | `系統` | 全身單人・性感系 | 4 大類 |
+| `姿勢編號` | `ポーズ番号` | `P001` | 80 組編號 |
+| `分類` | `分類` | 站姿 | 26 類動作 |
+| `姿勢名稱` | `ポーズ名` | S形站姿・胯部側頂 | 288 種描述 |
+| `角度` | `アングル` | 正面 | 5 種視角 |
+| `縮略圖` | `サムネ` | `thumbs/…jpg` | 相對路徑 |
+| `原圖` | `原寸` | `img/…png` | 相對路徑 |
+| `檢索` | — | 拼接串 | 供前端模糊搜索 |
 
-原始日文数据 `data/pose.json` 保持原样，字段名与站点接口一致，便于对照或回灌。
+原始日文數據 `data/pose.json` 保持原樣，字段名與站點接口一致，便於對照或回灌；頁面切換至日文時直接讀取該文件。
 
-## 本地预览
+## 本地預覽
 
-画廊通过 `fetch` 读取 JSON，需要 HTTP 环境（直接双击 `index.html` 会被 CORS 拦截）：
+畫廊通過 `fetch` 讀取 JSON，需要 HTTP 環境（直接雙擊 `index.html` 會被 CORS 攔截）：
 
 ```bash
 python3 -m http.server 8000
-# 打开 http://127.0.0.1:8000
+# 打開 http://127.0.0.1:8000
 ```
 
-页面支持体系/分类/视角组合筛选、关键词搜索、分组与逐张浏览、多角度缩略图、懒加载、灯箱原图下载、键盘与触屏导航。
+頁面支持體系/分類/視角組合篩選、關鍵詞搜索、分組與逐張瀏覽、多角度縮略圖、懶加載、燈箱原圖下載、鍵盤與觸屏導航、繁中／日文資料切換。
 
-## 脚本用法
+## 腳本用法
 
 ```bash
-# 重新拉取全部图片（已存在的文件自动跳过，可反复执行）
+# 重新拉取全部圖片（已存在的文件自動跳過，可反覆執行）
 python3 scripts/download.py
-WORKERS=64 python3 scripts/download.py   # 调整并发
+WORKERS=64 python3 scripts/download.py   # 調整並發
 
-# 修改 scripts/i18n.py 中的译文后，重新生成中文数据
+# 修改 scripts/i18n.py 中的譯文後，重新生成繁中數據
 python3 scripts/apply_translation.py
 
-# 校验 2878 个文件是否完整
+# 校驗 2878 個文件是否完整
 python3 scripts/verify.py
 ```
 
 ## 部署到 Cloudflare Pages
 
-仓库为纯静态站点，无框架、无依赖。
+倉庫為純靜態站點，無框架、無依賴。
 
-**方式一：GitHub 自动部署（推荐）**
+**方式一：GitHub 自動部署（推薦）**
 
-1. 登录 Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
-2. 选择本仓库 → 生产分支 `main`
-3. 构建设置照抄：
+1. 登錄 Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
+2. 選擇本倉庫 → 生產分支 `main`
+3. 構建設置照抄：
 
    | 字段 | 值 |
    | --- | --- |
@@ -151,32 +151,34 @@ python3 scripts/verify.py
    | Build command | `bash scripts/build.sh` |
    | Build output directory | `dist` |
 
-4. **Save and Deploy**，约 2–5 分钟得到 `https://<project>.pages.dev`
-5. 之后每次 `git push` 自动重新发布
+4. **Save and Deploy**，約 2–5 分鐘得到 `https://<project>.pages.dev`
+5. 之後每次 `git push` 自動重新發佈
 
-> ⚠️ **不要**把 Build output directory 直接填 `/`。仓库根目录含 `.git`（数百 MB），
-> Cloudflare 会把它当静态资源扫描，pack 文件超过 25 MiB 单文件限制会导致构建失败。
-> `scripts/build.sh` 只拷贝 `index.html`、`_headers`、`data/`、`thumbs/`、`img/` 到 `dist/`。
-> 若确实想用根目录，仓库已附 `.assetsignore` 兜底排除非站点文件。
+> ⚠️ **不要**把 Build output directory 直接填 `/`。倉庫根目錄含 `.git`（數百 MB），
+> Cloudflare 會把它當靜態資源掃描，pack 文件超過 25 MiB 單文件限制會導致構建失敗。
+> `scripts/build.sh` 只拷貝 `index.html`、`_headers`、`data/`、`thumbs/`、`img/` 到 `dist/`。
+> 若確實想用根目錄，倉庫已附 `.assetsignore` 兜底排除非站點文件。
 
-> 站点限制：单文件 ≤ 25 MiB、每次部署 ≤ 20,000 个文件。本仓库最大文件 917 KB、共 2883 个文件，均在限制内。
+> 站點限制：單文件 ≤ 25 MiB、每次部署 ≤ 20,000 個文件。本倉庫最大文件 917 KB、共 2883 個文件，均在限制內。
 
-**方式二：命令行直传**
+**方式二：命令行直傳**
 
 ```bash
 bash scripts/build.sh
 npx wrangler pages deploy dist --project-name ai-pose-gallery-zh
 ```
 
-`_headers` 已为 `img/`、`thumbs/` 配置一年期强缓存，图片不会重复回源。
+`_headers` 已為 `img/`、`thumbs/` 配置一年期強緩存，圖片不會重複回源。
 
-## 内容提示
+部署完成、正式域名確定後，將 `index.html` 的 canonical、`og:*`、`twitter:*`、JSON-LD，以及 `robots.txt` 的 Sitemap 行、`sitemap.xml` 的 loc 由相對路徑改為正式域名的絕對地址。
 
-图库包含成人向姿势参考（部分分类名称涉及性行为术语），仅供艺术创作、动作参考与前端技术学习使用。请勿用于违法用途。未成年人请勿访问。
+## 內容提示
 
-## 版权与致谢
+圖庫包含成人向姿勢參考（部分分類名稱涉及性行為術語），僅供藝術創作、動作參考與前端技術學習使用。請勿用於違法用途。未成年人請勿訪問。
 
-- **图片与原始数据的著作权归原作者ギア所有**，来源地址见页首
-- 本仓库仅为个人学习、汉化与静态站点实践存档，**不对图片主张任何权利**，也不构成对原作品的商业使用授权
-- 若原作者认为本仓库侵犯其权益，请通过 Issue 联系，将立即删除相关内容
-- `scripts/` 与 `index.html` 的代码以 MIT 协议开源（见 [LICENSE](LICENSE)），该协议**不覆盖** `img/`、`thumbs/` 与 `data/` 中的图片和原始数据
+## 版權與致謝
+
+- **圖片與原始數據的著作權歸原作者ギア所有**，來源地址見頁首
+- 本倉庫為繁中版 fork，源自 anhao 的簡體中文版，僅為個人學習、繁中化與靜態站點實踐存檔，屬**非商業鏡像**，**不對圖片主張任何權利**，也不構成對原作品的商業使用授權
+- 若原作者認為本倉庫侵犯其權益，請通過 Issue 聯繫，將立即刪除相關內容
+- `scripts/` 與 `index.html` 的代碼以 MIT 協議開源（見 [LICENSE](LICENSE)），該協議**不覆蓋** `img/`、`thumbs/` 與 `data/` 中的圖片和原始數據
