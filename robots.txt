@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai-pose-gallery.anhao.app/sitemap.xml
+# Sitemap 行待正式域名確定後補上（Sitemap: https://<正式域名>/sitemap.xml）
