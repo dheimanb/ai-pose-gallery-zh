@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap 行待正式域名確定後補上（Sitemap: https://<正式域名>/sitemap.xml）
+Sitemap: https://ai-pose-gallery-zh-95x.pages.dev/sitemap.xml
